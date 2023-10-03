@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CustomerMaster.master.cs" Inherits="Industrial_Experts.CustomerMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+
+        <link href="Content/bootstrap.css" rel="stylesheet" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+          <nav class="navbar navbar-expand-lg  ">
+<div class="container-fluid mb-3" style="background-color:#B18AC9;height:70px">
+    <a class="navbar-brand" href="#">
+       
+      <b class="mt-lg-5">Industrial Experts </b>  
+
+           <img src="logo.png" alt="Logo" width="70" height="60" class="d-inline-block align-text-top">
+            </a>
+
+    <asp:Button ID="Btnhome" runat="server" CssClass="d-flex btn btn-primary btn-lg" Text="Home" OnClick="Btnhome_Click" />
+    </div>
+</nav>
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <nav class="flex h-full  flex-col">
+             
+                    <nav class="flex h-full  flex-col ">
+    <div  style="width:300px; height:820px; background-color:#D9D9D9; border-radius:30px " class="text-center">
+
+
+    <asp:Button ID="btnprofile" runat="server" CssClass="btn btn-lg mt-lg-5 w-75" OnClick="btnprofile_Click" Text="Profile" Style="background-color:#B18AC9; margin-top:25px" />
+<asp:Button ID="btnAppSta" runat="server" CssClass="btn btn-lg mt-lg-5 w-75" OnClick="btnAppSta_Click" Text="Appointment Status" Style="background-color:#B18AC9" />
+        <asp:Button ID="btnAcceptApp" runat="server" CssClass="btn btn-lg mt-lg-5 w-75" OnClick="btnAcceptApp_Click" Text="Work Started" Style="background-color:#B18AC9" />
+<asp:Button ID="btnSchedule" runat="server" CssClass="btn btn-lg mt-lg-5 w-75" OnClick="btnSchedule_Click" Text="Schedule a Contract" Style="background-color:#B18AC9" />
+<asp:Button ID="btnContractStatus" runat="server" CssClass="btn btn-lg mt-lg-5 w-75" OnClick="btnContractStatus_Click" Text="Contract Status" Style="background-color:#B18AC9" />
+        <asp:Button ID="btnAcceptCon" runat="server" CssClass="btn btn-lg mt-lg-5 w-75" OnClick="btnAcceptCon_Click" Text="Contract Started" Style="background-color:#B18AC9" />
+<asp:Button ID="btnWorkHistory" runat="server" CssClass="btn btn-lg mt-lg-5 w-75" Text="Work History" OnClick="btnWorkHistory_Click" Style="background-color:#B18AC9"  />
+<asp:Button ID="btnLogout" runat="server" CssClass="btn btn-lg mt-lg-5 w-75" Text="Log-out" Style="background-color:#B18AC9" />
+
+
+
+    </div>
+    
+
+    </nav>
+                </nav>
+            </div>
+            <div class="col-md-9">
+
+
+                 <div class=" container">
+            <asp:ContentPlaceHolder ID="CustomerServices" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+            </div>
+        </div>
+    </div>
+           <div >
+            <footer style="margin-top:200px">
+                 <hr />
+               <%-- <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>--%>
+                <div class="fs-5 mb-2">
+                    <asp:Label ID="fotterlb1" runat="server" Text="Contact Us On :"></asp:Label>
+                     <asp:Label ID="footerlb2" runat="server" Text="+919717147714"></asp:Label>
+
+                </div>
+                <div class="fs-5 mb-2">
+                    <asp:Label ID="footerlb5" runat="server" Text="Email Us On :"></asp:Label>
+                    <asp:Label ID="footerlb6" runat="server" Text="industrialexperts999@gmail.com"></asp:Label>
+                </div>
+
+                <div class="fs-5 mb-2">
+                    <asp:Label ID="footerlg3" runat="server"  Text="Sponsered By: Department Of Information Technology ,The Islamia College Of Science and Commerce" ></asp:Label>
+               
+
+                </div>
+                <div class="fs-5 mb-2">
+                    <asp:Label ID="footerlb4" runat="server" Text="Registered With All Government Industrial Training Institutes "></asp:Label>
+                </div>
+
+            </footer>
+                </div>
+    </form>
+</body>
+</html>
+ 
+
+
+
+
+
+
+
+
